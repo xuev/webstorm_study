@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My test</title>
+    <script>
+        function whichButton(event) {
+            var btnNum = event.button;
+            if (btnNum == 2) {
+                alert("aaright")
+            }
+            else if (btnNum == 0) {
+                alert("aaleft")
+            }
+            else if (btnNum == 1) {
+                alert("aamiddle")
+            }
+            else {
+                alert(btnNum)
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function whichButton(event)
+        {
+            var btnNum = event.button;
+            if (btnNum==2)
+            {
+                alert("您点击了鼠标右键！")
+            }
+            else if(btnNum==0)
+            {
+                alert("您点击了鼠标左键！")
+            }
+            else if(btnNum==1)
+            {
+                alert("您点击了鼠标中键！");
+            }
+            else
+            {
+                alert("您点击了" + btnNum+ "号键，我不能确定它的名称。");
+            }
+        }
+    </script>
+</head>
+<body onmousedown="whichButton(event)">
+<p>aaa</p>
+</body>
+</html>
